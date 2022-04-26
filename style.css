@@ -1,13 +1,12 @@
 :root{
-    --main-bg-color: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    --main-bg-color: black;
     --main-border-color: limegreen;
     --user-color: teal;
     --comp-color: yellow;
 
 }
 body{
-    background-image: var(--main-bg-color);
-    color: limegreen;
+    background-color: var(--main-bg-color);
     text-align: center;
 }
 
@@ -23,6 +22,7 @@ body{
 
 h1{
     text-shadow: 0 0 20px green;
+    color: limegreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10vh;
     animation: glow 1s ease-in-out infinite alternate;
@@ -42,14 +42,13 @@ h1{
     margin-top: 5vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    color: lime;
-    text-shadow: 0 0 10px lime;
+    
 
 }
 
 #space1, #space2, #space3, #space4, #space5, #space6, #space7, #space8, #space9{
     
-    padding: 5vh;
+    padding: 2vh;
     
 }
 
@@ -68,5 +67,9 @@ h1{
 #gameboard *{
     text-align: center;
     font-size: xx-large;
+}
+
+h3{
+    color: lime;
 }
 
