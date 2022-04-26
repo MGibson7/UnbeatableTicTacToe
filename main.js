@@ -208,11 +208,12 @@ function checkWin(){
     }
     if (array123.length + array147.length + array159.length + array258.length + array357.length + array369.length + array456.length + array789.length ==24){
         playerInstructions.innerText = "DRAW"
+        winner = "Draw"
     }
     
 }
 
-//space.innerText = `${parseInt(array)+1}`
+
 //color: lime;
 //text-shadow: 0 0 10px lime;
 
@@ -273,13 +274,34 @@ function gameStart(){
                 
                 space.innerHTML = `<h2 style = "color:lime;">${turn}</h2>`
                 checkWin()
-                if(turn === 'X'){
-                    turn = 'O';
+                if (winner != "none"){
+                    console.log("WE HAVE A WINNER")
+                    winner = "none"
+                    array123 = []
+                    array456 = []
+                    array789 = []
+                    array147 = []
+                    array258 = []
+                    array369 = []
+                    array159 = []
+                    array357 = []
+                    for(array in spaceArray){
+                        space = spaceArray[array];
+                        space.innerText = `${parseInt(array)+1}`
+            
+                    }
                 }
                 else{
-                    turn = 'X';
+                    if(turn === 'X'){
+                        turn = 'O';
+                    }
+                    else{
+                        turn = 'X';
+                    }
+
                 }
-                //checkWin()
+                
+                
                 //computerMove()
                 //checkWin()
             }
