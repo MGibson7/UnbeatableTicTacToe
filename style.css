@@ -21,10 +21,10 @@ body{
   }
 
 h1{
-    text-shadow: 0 0 20px green;
+    text-shadow: 0 0 7vh green;
     color: limegreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10vh;
+    font-size: 7vh;
     animation: glow 1s ease-in-out infinite alternate;
     
 }
